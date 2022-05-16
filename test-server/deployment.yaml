@@ -17,8 +17,9 @@ spec:
     spec:
       containers:
         - name: test-server
-          image: test-server
+          image: zeze1004/sulsul:latest
           imagePullPolicy: Always
+          imagePullSecrets: regcred
           ports:
             - containerPort: 8000
               name: http
