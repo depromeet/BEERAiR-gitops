@@ -6,9 +6,9 @@ metadata:
 spec:
   project: apps
   source:
-    repoURL: "git@github.com:depromeet/BEERAiR-gitops.git"
+    repoURL: "git@github.com:depromeet/sulsul-BE.git"
     targetRevision: main
-    path: apps
+    path: .
   destination:
     name: in-cluster
     namespace: argocd
