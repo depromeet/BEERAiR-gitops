@@ -6,7 +6,7 @@ metadata:
 spec:
   project: apps
   source:
-    repoURL: "git@github.com:depromeet/BEERAiR-gitops.git"
+    repoURL: https://github.com/depromeet/BEERAiR-gitops.git
     targetRevision: main
     path: argocd-resources/resources/app
   destination:
