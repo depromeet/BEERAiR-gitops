@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: apps
+  name: test-server
   namespace: argocd
 spec:
   project: apps
   source:
-    repoURL: "git@github.com:depromeet/BEERAiR-gitops.git"
+    path: test-server
+    repoURL: https://github.com/depromeet/BEERAiR-gitops.git
     targetRevision: main
-    path: argocd-resources/resources/app
   destination:
     name: in-cluster
-    namespace: argocd
+    namespace: test-server
   syncPolicy:
     automated:
       prune: true
