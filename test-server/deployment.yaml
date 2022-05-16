@@ -22,7 +22,6 @@ spec:
           imagePullSecrets: regcred
           ports:
             - containerPort: 8000
-              name: http
           resources:
             limits:
               cpu: 100m
